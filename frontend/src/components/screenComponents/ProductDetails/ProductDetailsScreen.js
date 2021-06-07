@@ -41,12 +41,50 @@ const PDSStyle = styled.div`
     .productDetail
     {
         display: flex;
+        flex-direction: column;
+        align-items: center;
         margin: 20px 0px;
     }
 
     .PDpictureSet
     {
-        flex-basis: 45%;
+        flex-basis: 100%;
+    }
+
+    .body
+    {
+        flex-basis: 100%;
     }
     
+    @media screen and (min-width:1100px)
+    {
+        .productDetail
+        {
+            flex-direction: row;
+            align-items: flex-start;
+        }
+
+        .PDpictureSet
+        {
+            flex-basis: 45%;
+        }
+
+        .body
+        {
+            flex-basis: 55%;
+        }
+    }
+    
+    @media screen and (min-width:1300px)
+    {
+        .PDpictureSet
+        {
+            flex-basis: 40%;
+        }
+
+        .body
+        {
+            flex-basis: 60%;
+        }
+    }
 `;

@@ -55,22 +55,26 @@ export default pictureSet;
 const PDPictureSetStyle = styled.div`
 
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
 
     //Miniatures
     .miniaturesSet
     {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+        flex-direction: row;
         justify-content: space-around;
         align-items: center;
     }
     
     .miniaturesSet div
     {
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
+        border: 1px solid #DCE1DD;
+        margin: 0px 10px 10px 0px;
     }
 
     .miniaturesSet div img
@@ -83,10 +87,17 @@ const PDPictureSetStyle = styled.div`
     //Agrandissements
     .bigsSet > div div
     {
-        width: 500px;
-        height: 500px;
+        width: 100%;
+        height: 100%;
+        max-width: 250px;
+        max-height: 250px;
         position: absolute;
         z-index: 0;
+        left:0;
+        right:0;
+        margin-left:auto;
+        margin-right:auto;
+        border: 1px solid #DCE1DD;
     }
 
     .bigsSet > div div img
@@ -94,6 +105,53 @@ const PDPictureSetStyle = styled.div`
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+    
+    @media screen and (min-width:500px)
+    {
+        .bigsSet > div div
+        {
+            max-width: 400px;
+            max-height: 400px;
+        }
+    }
+
+    @media screen and (min-width:1100px)
+    {
+        
+        flex-direction: row;
+        align-items: flex-start;
+        
+        .miniaturesSet
+        {
+            flex-direction: column;
+        }
+        
+        .bigsSet > div div
+        {
+            max-width: 400px;
+            max-height: 400px;
+            margin-left: 100px;
+        }
+    }
+
+    @media screen and (min-width:1500px)
+    {
+        .bigsSet > div div
+        {
+            max-width: 500px;
+            max-height: 500px;
+            margin-left: 110px;
+        }
+    }
+    @media screen and (min-width:1800px)
+    {
+        .bigsSet > div div
+        {
+            max-width: 600px;
+            max-height: 600px;
+            margin-left: 120px;
+        }
     }
 
 

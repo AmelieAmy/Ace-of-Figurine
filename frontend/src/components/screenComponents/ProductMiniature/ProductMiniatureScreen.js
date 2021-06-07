@@ -20,12 +20,10 @@ const ScreenProductMiniature = () => {
                 <TopCategories />
                 <div className="mainContent">
                     <AsideFilters />
-                    <div>
-                        <div className="miniaturesCardContainer">
-                            {data.products.map((product) => (
-                                <ProductMiniature key={product._id} product={product} />
-                            ))}
-                        </div>
+                    <div className="miniaturesCardContainer">
+                        {data.products.map((product) => (
+                            <ProductMiniature key={product._id} product={product} />
+                        ))}
                     </div>
                 </div>
             </div>
@@ -46,14 +44,24 @@ const SPMStyle = styled.div`
 
     .aFilters
     {
-        flex-basis: 265px;
+        display: none;
     }
 
     .miniaturesCardContainer
     {   
-        width: 1530px;
+        flex-basis: 85%;
+        /* width: 1530px; */
         display: flex;
         flex-wrap: wrap;
+    }
+
+    @media screen and (min-width:800px)
+    {
+        .aFilters
+        {
+            display: block;
+            flex-basis: 15%;
+        }
     }
 
     /* Main card */
