@@ -1,0 +1,95 @@
+/************************************ General >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/************************************ General >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/************************************ General >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/************************************ General >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/* all parameters */
+*
+{
+	box-sizing: border-box;
+	outline: none;
+    scroll-behavior: smooth;
+}
+
+
+/* all links parameters */
+a
+{
+	text-decoration: none;
+    font-weight: normal;
+    color: #000000;
+}
+
+/* header links parameters */
+header a
+{
+    color: #FFFFFF;
+}
+
+/* default margin */
+h1, h2, h3, h4, h5, h6, p
+{
+    margin: 0px;
+}
+
+/* main parameters */
+body
+{
+    background-color: #FFFFFF;
+    /* background-color: red; */
+    margin: 0px;
+    text-align: center;
+    font-family: "Trebuchet MS";
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* fonts for code quotes */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< General *********************************/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< General *********************************/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< General *********************************/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< General *********************************/
+
+
+/************************************* Fonts >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/************************************* Fonts >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/************************************* Fonts >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/************************************* Fonts >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+@font-face
+{
+    font-family: "Trebuchet MS";
+    src: url(./assets/fonts/trebuchet/trebuc.ttf);
+    font-weight: lighter;
+    font-style: normal
+}
+
+@font-face
+{
+    font-family: "Trebuchet MS bold";
+    src: url(./assets/fonts/trebuchet/trebucbd.ttf);
+    font-weight: lighter;
+    font-style: normal
+}
+
+@font-face
+{
+    font-family: "Segoe UI Emoji";
+    src: url(./assets/fonts/segoe/seguiemj.ttf);
+    font-weight: lighter;
+    font-style: normal
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Fonts **********************************/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Fonts **********************************/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Fonts **********************************/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Fonts **********************************/
