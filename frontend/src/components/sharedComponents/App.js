@@ -2,7 +2,7 @@ import React from 'react';
 import { Switch, Route } from "react-router-dom";
 
 // Component links
-import Home from "./components/screenComponents/Home";
+import SPM from "../screenComponents/ProductMiniature/ScreenProductMiniature";
 
 
 const App = () => {
@@ -10,7 +10,7 @@ const App = () => {
     return (
         <Switch>
             <Route path="/" exact >
-                <Home />
+                <SPM />
             </Route>
         </Switch>
     );
