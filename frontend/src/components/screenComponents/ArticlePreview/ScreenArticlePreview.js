@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Header from "../sharedComponents/header/header";
-import TopCategories from "../sharedComponents/topCategories";
-import ArticlePreview from "../sharedComponents/articlePreview";
-import AsideFilters from "../sharedComponents/asideFilters";
+import Header from "../../sharedComponents/header/header";
+import TopCategories from "./topCategories";
+import ArticlePreview from "./articlePreviewSection";
+import AsideFilters from "./asideFilters";
 
 const Home = () => {
     return (
