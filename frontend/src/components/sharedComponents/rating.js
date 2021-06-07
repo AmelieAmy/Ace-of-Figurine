@@ -4,11 +4,13 @@ import StarBorderIcon from '@material-ui/icons/StarBorder';
 import StarHalfIcon from '@material-ui/icons/StarHalf';
 import StarIcon from '@material-ui/icons/Star';
 
+import styled from 'styled-components';
 
-const Rating = ( { rating, numReviews } ) => {
+
+const Rating = ( { rating } ) => {
 
     return (
-        <div className="rating">
+        <RatingStyle className="rating">
             <span>
                 { rating >= 1
                     ? <StarIcon />
@@ -49,9 +51,27 @@ const Rating = ( { rating, numReviews } ) => {
                     : <StarBorderIcon />
                 }
             </span>
-            <span>({numReviews})</span>
-        </div>
+        </RatingStyle>
     )
 }
 
 export default Rating;
+
+
+const RatingStyle = styled.div`
+
+    display: flex;
+    align-items: center;
+
+    span svg
+    {
+        display: flex;
+        align-items: center;
+    }
+
+    span svg
+    {
+        fill: #FFA726;
+    }
+      
+`;

@@ -1,17 +1,16 @@
 import React from 'react';
 import { Switch, Route } from "react-router-dom";
 
-// Component links
-import SPM from "../screenComponents/ProductMiniature/ScreenProductMiniature";
+import SPM from "../screenComponents/ProductMiniature/ProductMiniatureScreen";
+import PDS from "../screenComponents/ProductDetails/ProductDetailsScreen";
 
 
 const App = () => {
 
     return (
         <Switch>
-            <Route path="/" exact >
-                <SPM />
-            </Route>
+            <Route path="/product/:id" component={PDS} ></Route>
+            <Route path="/" component={SPM} exact ></Route>
         </Switch>
     );
 

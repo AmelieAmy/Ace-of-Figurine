@@ -1,7 +1,6 @@
 import React from 'react';
-import Rating from './rating';
 
-// import data from '../../../assets/data/data';
+import Rating from '../../sharedComponents/rating';
 
 import styled from 'styled-components';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
@@ -16,9 +15,8 @@ const ProductMiniature = ( { product } ) => {
         <PMStyle className="miniatureCard">
             <a href={`/product/${product._id}`}>
                 <img
-                className="medium"
-                src={product.image}
-                alt={product.name}
+                    src={product.miniature}
+                    alt={product.name}
                 />
             </a>
             <div className="miniatureCardBody">
@@ -30,7 +28,10 @@ const ProductMiniature = ( { product } ) => {
                         control={<Checkbox icon={<FavoriteBorder />} checkedIcon={<Favorite />} name="checkedH" />}
                     />
                 </div>
-                <Rating rating={product.rating} numReviews={product.numReviews} / >
+                <div>
+                    <Rating rating={product.rating} numReviews={product.numReviews} />
+                    ({ product.numReviews })
+                </div>
                 <div className="price">
                     {product.price} €
                 </div>
@@ -66,18 +67,6 @@ const PMStyle = styled.div`
         margin: 5px 0px 5px;
     }
 
-    /* Rating */
-    .rating span svg
-    {
-        fill: #FFA726;
-    }
-    
-    .rating
-    {
-        display: flex;
-        align-items: center;
-    }
-    
     /* Favorite */
     .miniatureCardBody .MuiFormControlLabel-root
     {
@@ -87,6 +76,13 @@ const PMStyle = styled.div`
     .miniatureCardBody .MuiFormControlLabel-root span svg
     {
         fill: #9E2133;
+    }
+
+    /* Rating */
+    .miniatureCardBody > div:nth-of-type(2)
+    {
+        display: flex;
+        align-items: center;
     }
 
     /* Price */

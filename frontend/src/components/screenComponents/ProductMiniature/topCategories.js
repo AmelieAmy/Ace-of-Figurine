@@ -25,8 +25,7 @@ export default topCategories;
 const TopCategories = styled.div`
 
     background-color: #FAF3EE;
-    margin: 2rem auto;
-    max-width: 95%;
+    margin: 20px 0px 30px;
     padding: 1rem;
 
     /* Titre et nombre d'articles */
