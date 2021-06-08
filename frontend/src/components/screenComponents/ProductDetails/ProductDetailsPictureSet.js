@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import styled from 'styled-components';
 // import Carousel from 'react-elastic-carousel'
@@ -14,19 +14,66 @@ import styled from 'styled-components';
 //     )
 // }
 
-const pictureSet = ( { product } ) => {
+const PictureSet = ( { product } ) => {
+    
+    const [activeMin, setActivMin] = useState(false);
+    const [zIndex, setZIndex] = useState(false);
 
-    function handleMiniature(e) {
-        console.log("L'image n {product._id} a été cliquée");
+    const minOpacity =
+    {
+        opacity: "50%",
+    }
+
+    const maxOpacity =
+    {
+        opacity: "100%",
+    }
+    
+    const zIndexActiveStyle =
+    {
+        zIndex:1
+    }
+
+    const zIndexUnactiveStyle =
+    {
+        zIndex:0
+    }
+
+
+    function handleMiniature(e, index) {
+        console.log("L'image ", index, " a été cliquée");
+        console.log(index, e);
+        e.target.style.opacity = .5;
+        setActivMin(true);
+        setZIndex(true);
+
+
+        // e.nativeEvent[index]
+
+        // if(index === 0)
+        // {
+        //     setActivMin(true);
+        //     setZIndex(true);
+        // }
+        // if(index === 1)
+        // {
+        //     setActivMin(true);
+        //     setZIndex(true);
+        // }
+        
     }
 
     return (
         <PDPictureSetStyle className="PDpictureSet">
             <div className="miniaturesSet">
-                {product.images.map((img) => (
-                    <div key={img.id}>
+                {product.images.map((img, index) => (
+                    <div 
+                        style={activeMin ? minOpacity : maxOpacity}
+                        onClick={(e) => handleMiniature(e, index)} 
+                        key={img.id}
+                        value={index}
+                    >
                         <img
-                            onClick={handleMiniature()} 
                             src={img.src}
                             alt={img.alt}
                         />
@@ -36,7 +83,7 @@ const pictureSet = ( { product } ) => {
             <div className="bigsSet">
                 <div>
                     {product.images.map((img) => (
-                        <div key={img.id}>
+                        <div style={zIndex ? zIndexActiveStyle : zIndexUnactiveStyle} key={img.id}>
                             <img
                                 src={img.src}
                                 alt={img.alt}
@@ -49,7 +96,7 @@ const pictureSet = ( { product } ) => {
     )
 }
 
-export default pictureSet;
+export default PictureSet;
 
 
 const PDPictureSetStyle = styled.div`
@@ -155,27 +202,26 @@ const PDPictureSetStyle = styled.div`
     }
 
 
-    /* img
-    {
-        width: 100%;
-        //max-width: 300px;
-    }
-
-    .rec-carousel-wrapper
-    {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: flex-start;
-    }
-
-    .rec-carousel-wrapper img
-    {
-        border: 1px solid #DCE1DD;
-    }
-
-    .rec-pagination
-    {
-        display: flex;
-        flex-direction: column;
-    } */
+    //img
+    //{
+    //    width: 100%;
+    //}
+    //
+    //.rec-carousel-wrapper
+    //{
+    //    display: flex;
+    //    flex-direction: row-reverse;
+    //    align-items: flex-start;
+    //}
+    //
+    //.rec-carousel-wrapper img
+    //{
+    //    border: 1px solid #DCE1DD;
+    //}
+    //
+    //.rec-pagination
+    //{
+    //    display: flex;
+    //    flex-direction: column;
+    //}
 `;

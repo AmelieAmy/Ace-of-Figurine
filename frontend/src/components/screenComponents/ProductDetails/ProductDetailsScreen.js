@@ -5,6 +5,7 @@ import data from '../../../assets/data/data';
 
 import Header from "../../sharedComponents/header/header";
 import PictureSet from "./ProductDetailsPictureSet";
+// import Carouselle from "./carousel";
 import Body from "./ProductDetailsBody";
 
 import styled from 'styled-components';
@@ -22,9 +23,10 @@ const ProductDetailsScreen = (props) => {
         <PDSStyle>
             <Header />
             <div className="container">
-                <Link className="backward" href="/">&lt; Retour aux recherches</Link>
+                <Link className="backward" to="/">&lt; Retour aux recherches</Link>
                 <div className="productDetail">
                     <PictureSet product={product} />
+                    {/* <Carouselle product={product} /> */}
                     <Body product={product} />
                 </div>
             </div>

@@ -41,7 +41,13 @@ const data = {
             brand: 'SENHAI',
             rating: 5,
             numReviews: 12,
-            description: 'blabla',
+            description: [
+                "42 outils pour l'argile - Vous disposerez de tous les outils nécessaires pour mouler l'argile, sculpter, lisser, façonner, nettoyer et découper vos sculptures et donner vie à votre vision.",
+                "Une prise en main confortable - Chaque outil métallique a une poignée en bois lisse, ce qui les rend confortables à tenir et faciles à contrôler.",
+                "Durable et résistant - Les pointes en acier inoxydable garantissent qu'elles ne se plient pas ou ne se cassent pas sous la pression, ce qui permet de sculpter en douceur et avec précision.",
+                "Kit d'outils de poterie de qualité professionnelle - Les sculpteurs de tous niveaux apprécieront la construction de haute qualité et la large gamme d'outils de ce kit.",
+                "Garantie de satisfaction 100 % - Si votre kit d'outils de poterie et de sculpture ne répond pas à vos attentes, nous serons heureux de vous le remplacer ou de vous le rembourser."
+            ],
             price: 12.99
         },
         {
@@ -60,7 +66,13 @@ const data = {
             brand: 'INCONNU',
             rating: 3,
             numReviews: 4,
-            description: 'blabla',
+            description: [
+                "42 outils pour l'argile - Vous disposerez de tous les outils nécessaires pour mouler l'argile, sculpter, lisser, façonner, nettoyer et découper vos sculptures et donner vie à votre vision.",
+                "Une prise en main confortable - Chaque outil métallique a une poignée en bois lisse, ce qui les rend confortables à tenir et faciles à contrôler.",
+                "Durable et résistant - Les pointes en acier inoxydable garantissent qu'elles ne se plient pas ou ne se cassent pas sous la pression, ce qui permet de sculpter en douceur et avec précision.",
+                "Kit d'outils de poterie de qualité professionnelle - Les sculpteurs de tous niveaux apprécieront la construction de haute qualité et la large gamme d'outils de ce kit.",
+                "Garantie de satisfaction 100 % - Si votre kit d'outils de poterie et de sculpture ne répond pas à vos attentes, nous serons heureux de vous le remplacer ou de vous le rembourser."
+            ],
             price: 11
         },
         {
@@ -79,7 +91,13 @@ const data = {
             brand: 'INCONNU',
             rating: 4,
             numReviews: 13,
-            description: 'blabla',
+            description: [
+                "42 outils pour l'argile - Vous disposerez de tous les outils nécessaires pour mouler l'argile, sculpter, lisser, façonner, nettoyer et découper vos sculptures et donner vie à votre vision.",
+                "Une prise en main confortable - Chaque outil métallique a une poignée en bois lisse, ce qui les rend confortables à tenir et faciles à contrôler.",
+                "Durable et résistant - Les pointes en acier inoxydable garantissent qu'elles ne se plient pas ou ne se cassent pas sous la pression, ce qui permet de sculpter en douceur et avec précision.",
+                "Kit d'outils de poterie de qualité professionnelle - Les sculpteurs de tous niveaux apprécieront la construction de haute qualité et la large gamme d'outils de ce kit.",
+                "Garantie de satisfaction 100 % - Si votre kit d'outils de poterie et de sculpture ne répond pas à vos attentes, nous serons heureux de vous le remplacer ou de vous le rembourser."
+            ],
             price: 9.53
         },
         {
@@ -98,7 +116,13 @@ const data = {
             brand: 'INCONNU',
             rating: 4.5,
             numReviews: 5,
-            description: 'blabla',
+            description: [
+                "42 outils pour l'argile - Vous disposerez de tous les outils nécessaires pour mouler l'argile, sculpter, lisser, façonner, nettoyer et découper vos sculptures et donner vie à votre vision.",
+                "Une prise en main confortable - Chaque outil métallique a une poignée en bois lisse, ce qui les rend confortables à tenir et faciles à contrôler.",
+                "Durable et résistant - Les pointes en acier inoxydable garantissent qu'elles ne se plient pas ou ne se cassent pas sous la pression, ce qui permet de sculpter en douceur et avec précision.",
+                "Kit d'outils de poterie de qualité professionnelle - Les sculpteurs de tous niveaux apprécieront la construction de haute qualité et la large gamme d'outils de ce kit.",
+                "Garantie de satisfaction 100 % - Si votre kit d'outils de poterie et de sculpture ne répond pas à vos attentes, nous serons heureux de vous le remplacer ou de vous le rembourser."
+            ],
             price: 59.99
         },
         {
@@ -117,7 +141,13 @@ const data = {
             brand: 'INCONNU',
             rating: 4.5,
             numReviews: 10,
-            description: 'blabla',
+            description: [
+                "42 outils pour l'argile - Vous disposerez de tous les outils nécessaires pour mouler l'argile, sculpter, lisser, façonner, nettoyer et découper vos sculptures et donner vie à votre vision.",
+                "Une prise en main confortable - Chaque outil métallique a une poignée en bois lisse, ce qui les rend confortables à tenir et faciles à contrôler.",
+                "Durable et résistant - Les pointes en acier inoxydable garantissent qu'elles ne se plient pas ou ne se cassent pas sous la pression, ce qui permet de sculpter en douceur et avec précision.",
+                "Kit d'outils de poterie de qualité professionnelle - Les sculpteurs de tous niveaux apprécieront la construction de haute qualité et la large gamme d'outils de ce kit.",
+                "Garantie de satisfaction 100 % - Si votre kit d'outils de poterie et de sculpture ne répond pas à vos attentes, nous serons heureux de vous le remplacer ou de vous le rembourser."
+            ],
             price: 3.99
         },
         {
@@ -136,7 +166,13 @@ const data = {
             brand: 'INCONNU',
             rating: 4,
             numReviews: 13,
-            description: 'blabla',
+            description: [
+                "42 outils pour l'argile - Vous disposerez de tous les outils nécessaires pour mouler l'argile, sculpter, lisser, façonner, nettoyer et découper vos sculptures et donner vie à votre vision.",
+                "Une prise en main confortable - Chaque outil métallique a une poignée en bois lisse, ce qui les rend confortables à tenir et faciles à contrôler.",
+                "Durable et résistant - Les pointes en acier inoxydable garantissent qu'elles ne se plient pas ou ne se cassent pas sous la pression, ce qui permet de sculpter en douceur et avec précision.",
+                "Kit d'outils de poterie de qualité professionnelle - Les sculpteurs de tous niveaux apprécieront la construction de haute qualité et la large gamme d'outils de ce kit.",
+                "Garantie de satisfaction 100 % - Si votre kit d'outils de poterie et de sculpture ne répond pas à vos attentes, nous serons heureux de vous le remplacer ou de vous le rembourser."
+            ],
             price: 34.99
         },
         {
@@ -155,7 +191,13 @@ const data = {
             brand: 'PEBEO',
             rating: 3,
             numReviews: 4,
-            description: 'blabla',
+            description: [
+                "42 outils pour l'argile - Vous disposerez de tous les outils nécessaires pour mouler l'argile, sculpter, lisser, façonner, nettoyer et découper vos sculptures et donner vie à votre vision.",
+                "Une prise en main confortable - Chaque outil métallique a une poignée en bois lisse, ce qui les rend confortables à tenir et faciles à contrôler.",
+                "Durable et résistant - Les pointes en acier inoxydable garantissent qu'elles ne se plient pas ou ne se cassent pas sous la pression, ce qui permet de sculpter en douceur et avec précision.",
+                "Kit d'outils de poterie de qualité professionnelle - Les sculpteurs de tous niveaux apprécieront la construction de haute qualité et la large gamme d'outils de ce kit.",
+                "Garantie de satisfaction 100 % - Si votre kit d'outils de poterie et de sculpture ne répond pas à vos attentes, nous serons heureux de vous le remplacer ou de vous le rembourser."
+            ],
             price: 10.99
         },
         {
@@ -174,7 +216,13 @@ const data = {
             brand: 'INCONNU',
             rating: 8,
             numReviews: 3.5,
-            description: 'blabla',
+            description: [
+                "42 outils pour l'argile - Vous disposerez de tous les outils nécessaires pour mouler l'argile, sculpter, lisser, façonner, nettoyer et découper vos sculptures et donner vie à votre vision.",
+                "Une prise en main confortable - Chaque outil métallique a une poignée en bois lisse, ce qui les rend confortables à tenir et faciles à contrôler.",
+                "Durable et résistant - Les pointes en acier inoxydable garantissent qu'elles ne se plient pas ou ne se cassent pas sous la pression, ce qui permet de sculpter en douceur et avec précision.",
+                "Kit d'outils de poterie de qualité professionnelle - Les sculpteurs de tous niveaux apprécieront la construction de haute qualité et la large gamme d'outils de ce kit.",
+                "Garantie de satisfaction 100 % - Si votre kit d'outils de poterie et de sculpture ne répond pas à vos attentes, nous serons heureux de vous le remplacer ou de vous le rembourser."
+            ],
             price: 8.95
         }
     ]
