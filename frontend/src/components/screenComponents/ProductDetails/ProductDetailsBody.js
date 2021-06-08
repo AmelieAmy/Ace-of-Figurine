@@ -3,6 +3,7 @@ import React from 'react';
 import Rating from '../../sharedComponents/rating';
 
 import styled from 'styled-components';
+import CountInStock from '../../sharedComponents/countInStock';
 
 
 const PDBody = ( { product } ) => {
@@ -15,7 +16,7 @@ const PDBody = ( { product } ) => {
                     <div>
                         <Rating rating={product.rating} />
                         <p>{ product.numReviews } évaluations</p>
-                        <p>( Produit en stock )</p>
+                        <CountInStock product={product} />
                     </div>
                 </div>
                 <div>
@@ -100,13 +101,6 @@ const PDBodyStyle = styled.div`
     .bodyHeader > div:first-of-type div p:first-of-type
     {
         padding: 0px 10px 0px 5px;
-        font-size: 1.1rem;
-    }
-
-    /* In Stock*/    
-    .bodyHeader > div:first-of-type div p:last-of-type
-    {
-        color: #1D6D05;
         font-size: 1.1rem;
     }
 
@@ -216,7 +210,7 @@ const PDBodyStyle = styled.div`
         .bodyHeader > div:first-of-type > div
         {
             flex-direction: row;
-            align-items: flex-start;
+            align-items: center;
         }
     }
 `;

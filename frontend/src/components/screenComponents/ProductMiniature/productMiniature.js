@@ -7,6 +7,7 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
 import Favorite from '@material-ui/icons/Favorite';
 import FavoriteBorder from '@material-ui/icons/FavoriteBorder';
+import CountInStock from '../../sharedComponents/countInStock';
 
 
 const ProductMiniature = ( { product } ) => {
@@ -32,6 +33,7 @@ const ProductMiniature = ( { product } ) => {
                     <Rating rating={product.rating} numReviews={product.numReviews} />
                     ({ product.numReviews })
                 </div>
+                <CountInStock product={product} />
                 <div className="price">
                     {product.price} €
                 </div>

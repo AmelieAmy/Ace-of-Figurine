@@ -23,7 +23,8 @@ const data = {
                 "Kit d'outils de poterie de qualité professionnelle - Les sculpteurs de tous niveaux apprécieront la construction de haute qualité et la large gamme d'outils de ce kit.",
                 "Garantie de satisfaction 100 % - Si votre kit d'outils de poterie et de sculpture ne répond pas à vos attentes, nous serons heureux de vous le remplacer ou de vous le rembourser."
             ],
-            price: 30.99
+            price: 30.99,
+            countInStock: 16
         },
         {
             _id: '2',            
@@ -48,7 +49,8 @@ const data = {
                 "Kit d'outils de poterie de qualité professionnelle - Les sculpteurs de tous niveaux apprécieront la construction de haute qualité et la large gamme d'outils de ce kit.",
                 "Garantie de satisfaction 100 % - Si votre kit d'outils de poterie et de sculpture ne répond pas à vos attentes, nous serons heureux de vous le remplacer ou de vous le rembourser."
             ],
-            price: 12.99
+            price: 12.99,
+            countInStock: 13
         },
         {
             _id: '3',            
@@ -73,7 +75,8 @@ const data = {
                 "Kit d'outils de poterie de qualité professionnelle - Les sculpteurs de tous niveaux apprécieront la construction de haute qualité et la large gamme d'outils de ce kit.",
                 "Garantie de satisfaction 100 % - Si votre kit d'outils de poterie et de sculpture ne répond pas à vos attentes, nous serons heureux de vous le remplacer ou de vous le rembourser."
             ],
-            price: 11
+            price: 11,
+            countInStock: 3
         },
         {
             _id: '4',            
@@ -98,7 +101,8 @@ const data = {
                 "Kit d'outils de poterie de qualité professionnelle - Les sculpteurs de tous niveaux apprécieront la construction de haute qualité et la large gamme d'outils de ce kit.",
                 "Garantie de satisfaction 100 % - Si votre kit d'outils de poterie et de sculpture ne répond pas à vos attentes, nous serons heureux de vous le remplacer ou de vous le rembourser."
             ],
-            price: 9.53
+            price: 9.53,
+            countInStock: 45
         },
         {
             _id: '5',            
@@ -123,7 +127,8 @@ const data = {
                 "Kit d'outils de poterie de qualité professionnelle - Les sculpteurs de tous niveaux apprécieront la construction de haute qualité et la large gamme d'outils de ce kit.",
                 "Garantie de satisfaction 100 % - Si votre kit d'outils de poterie et de sculpture ne répond pas à vos attentes, nous serons heureux de vous le remplacer ou de vous le rembourser."
             ],
-            price: 59.99
+            price: 59.99,
+            countInStock: 16
         },
         {
             _id: '6',            
@@ -148,7 +153,8 @@ const data = {
                 "Kit d'outils de poterie de qualité professionnelle - Les sculpteurs de tous niveaux apprécieront la construction de haute qualité et la large gamme d'outils de ce kit.",
                 "Garantie de satisfaction 100 % - Si votre kit d'outils de poterie et de sculpture ne répond pas à vos attentes, nous serons heureux de vous le remplacer ou de vous le rembourser."
             ],
-            price: 3.99
+            price: 3.99,
+            countInStock: 4
         },
         {
             _id: '7',            
@@ -173,7 +179,8 @@ const data = {
                 "Kit d'outils de poterie de qualité professionnelle - Les sculpteurs de tous niveaux apprécieront la construction de haute qualité et la large gamme d'outils de ce kit.",
                 "Garantie de satisfaction 100 % - Si votre kit d'outils de poterie et de sculpture ne répond pas à vos attentes, nous serons heureux de vous le remplacer ou de vous le rembourser."
             ],
-            price: 34.99
+            price: 34.99,
+            countInStock: 8
         },
         {
             _id: '8',            
@@ -198,7 +205,8 @@ const data = {
                 "Kit d'outils de poterie de qualité professionnelle - Les sculpteurs de tous niveaux apprécieront la construction de haute qualité et la large gamme d'outils de ce kit.",
                 "Garantie de satisfaction 100 % - Si votre kit d'outils de poterie et de sculpture ne répond pas à vos attentes, nous serons heureux de vous le remplacer ou de vous le rembourser."
             ],
-            price: 10.99
+            price: 10.99,
+            countInStock: 16
         },
         {
             _id: '9',            
@@ -223,7 +231,8 @@ const data = {
                 "Kit d'outils de poterie de qualité professionnelle - Les sculpteurs de tous niveaux apprécieront la construction de haute qualité et la large gamme d'outils de ce kit.",
                 "Garantie de satisfaction 100 % - Si votre kit d'outils de poterie et de sculpture ne répond pas à vos attentes, nous serons heureux de vous le remplacer ou de vous le rembourser."
             ],
-            price: 8.95
+            price: 8.95,
+            countInStock: 12
         }
     ]
 };

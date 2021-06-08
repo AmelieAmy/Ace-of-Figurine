@@ -1,31 +1,60 @@
-import React from 'react';
-
-import data from '../../../assets/data/data';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 
 import Header from "../../sharedComponents/header/header";
 import ArianeThread from "../../sharedComponents/arianeThread";
 import TopCategories from "./topCategories";
 import AsideFilters from "./asideFilters";
 import ProductMiniature from "./productMiniature";
+import LoadingBox from "../../sharedComponents/loadingBox";
+import MessageBox from "../../sharedComponents/messageBox";
 
 import styled from 'styled-components';
 
 
 const ScreenProductMiniature = () => {
+
+    const [products, setProducts] = useState([]);
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState(false);
+    
+    useEffect(() => {
+        const fecthData = async () => {
+            try {
+                setLoading(true);
+                const { data } = await axios.get('/api/products');
+                setLoading(false);
+                setProducts(data);
+            } catch (err) {
+                setError(err.message);
+                setLoading(false);
+            }
+        };
+        fecthData();
+    }, []);
+
     return (
         <SPMStyle>
             <Header />
             <div className="container">
-                <ArianeThread />
-                <TopCategories />
-                <div className="mainContent">
-                    <AsideFilters />
-                    <div className="miniaturesCardContainer">
-                        {data.products.map((product) => (
-                            <ProductMiniature key={product._id} product={product} />
-                        ))}
-                    </div>
-                </div>
+                { loading ? (
+                    <LoadingBox></LoadingBox>
+                ) : error ? (
+                    <MessageBox variant="danger">{error}</MessageBox>
+                ) : (
+                    <>
+                        <ArianeThread />
+                        <TopCategories />
+                        <div className="mainContent">
+                            <AsideFilters />
+                            <div className="miniaturesCardContainer">
+                                {products.map((product) => (
+                                    <ProductMiniature key={product._id} product={product} />
+                                ))}
+                            </div>
+                        </div>
+                    </>
+                )}
             </div>
         </SPMStyle>
     );

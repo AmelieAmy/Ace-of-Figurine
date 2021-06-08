@@ -98,3 +98,33 @@ code {
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Fonts **********************************/
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Fonts **********************************/
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Fonts **********************************/
+
+    .success
+    {
+        color: white;
+        background-color: #02691C;
+    }
+
+    .danger
+    {
+        color: white;
+        background-color: #880c0c;
+    }
+
+    .alert
+    {
+        padding: 10px 20px;
+        border-radius: 5px;
+    }
+    
+    .alert-info
+    {
+        color: white;
+        background-color: #0F0569;
+    }
+    
+    .alert-danger
+    {
+        color: white;
+        background-color: #880c0c;
+    }
