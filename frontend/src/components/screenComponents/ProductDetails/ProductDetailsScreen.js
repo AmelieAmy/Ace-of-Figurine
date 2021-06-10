@@ -4,9 +4,8 @@ import { Link } from 'react-router-dom';
 import data from '../../../assets/data/data';
 
 import Header from "../../sharedComponents/header/header";
-import PictureSet from "./ProductDetailsPictureSet";
-// import Carouselle from "./carousel";
-import Body from "./ProductDetailsBody";
+import PictureSet from "./productDetailsPictureSet";
+import Body from "./productDetailsDescription";
 
 import styled from 'styled-components';
 
@@ -26,7 +25,6 @@ const ProductDetailsScreen = (props) => {
                 <Link className="backward" to="/">&lt; Retour aux recherches</Link>
                 <div className="productDetail">
                     <PictureSet product={product} />
-                    {/* <Carouselle product={product} /> */}
                     <Body product={product} />
                 </div>
             </div>

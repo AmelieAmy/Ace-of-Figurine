@@ -1,36 +1,26 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 
 import Header from "../../sharedComponents/header/header";
 import ArianeThread from "../../sharedComponents/arianeThread";
 import TopCategories from "./topCategories";
 import AsideFilters from "./asideFilters";
-import ProductMiniature from "./productMiniature";
+import ProductMiniature from "./productsSection";
 import LoadingBox from "../../sharedComponents/loadingBox";
 import MessageBox from "../../sharedComponents/messageBox";
+import { listProducts } from '../../../reduxFiles/actions/productActions';
 
 import styled from 'styled-components';
 
 
 const ScreenProductMiniature = () => {
 
-    const [products, setProducts] = useState([]);
-    const [loading, setLoading] = useState(false);
-    const [error, setError] = useState(false);
+    const dispatch = useDispatch();
+    const productList = useSelector( (state) => state.productList );
+    const { products, loading, error } = productList;
     
     useEffect(() => {
-        const fecthData = async () => {
-            try {
-                setLoading(true);
-                const { data } = await axios.get('/api/products');
-                setLoading(false);
-                setProducts(data);
-            } catch (err) {
-                setError(err.message);
-                setLoading(false);
-            }
-        };
-        fecthData();
+        dispatch(listProducts());
     }, []);
 
     return (

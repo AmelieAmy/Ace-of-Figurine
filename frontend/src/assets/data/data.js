@@ -31,12 +31,7 @@ const data = {
             name: 'SENHAI Outils de sculpture pour pâte polymère ',
             miniature: "/products_preview/02.jpg",
             images: [
-                {id: 1, src:"/products_preview/01.jpg", alt:"image descrip 1"},
-                {id: 2, src:"/products_preview/012.jpg", alt:"image descrip 2"},
-                {id: 3, src:"/products_preview/013.jpg", alt:"image descrip 3"},
-                {id: 4, src:"/products_preview/014.jpg", alt:"image descrip 4"},
-                {id: 5, src:"/products_preview/015.jpg", alt:"image descrip 5"},
-                {id: 6, src:"/products_preview/016.jpg", alt:"image descrip 6"}
+                {id: 1, src:"/products_preview/02.jpg", alt:"image descrip 1"}
             ],
             category: 'equipment stencils',
             brand: 'SENHAI',
@@ -57,12 +52,7 @@ const data = {
             name: '30 Outils de sculpture sur argile artisanale',
             miniature: "/products_preview/03.jpg",
             images: [
-                {id: 1, src:"/products_preview/01.jpg", alt:"image descrip 1"},
-                {id: 2, src:"/products_preview/012.jpg", alt:"image descrip 2"},
-                {id: 3, src:"/products_preview/013.jpg", alt:"image descrip 3"},
-                {id: 4, src:"/products_preview/014.jpg", alt:"image descrip 4"},
-                {id: 5, src:"/products_preview/015.jpg", alt:"image descrip 5"},
-                {id: 6, src:"/products_preview/016.jpg", alt:"image descrip 6"}
+                {id: 1, src:"/products_preview/03.jpg", alt:"image descrip 1"}
             ],
             category: 'equipment stencils',
             brand: 'INCONNU',
@@ -83,12 +73,7 @@ const data = {
             name: 'Kit de sculpture en argile',
             miniature: "/products_preview/04.jpg",
             images: [
-                {id: 1, src:"/products_preview/01.jpg", alt:"image descrip 1"},
-                {id: 2, src:"/products_preview/012.jpg", alt:"image descrip 2"},
-                {id: 3, src:"/products_preview/013.jpg", alt:"image descrip 3"},
-                {id: 4, src:"/products_preview/014.jpg", alt:"image descrip 4"},
-                {id: 5, src:"/products_preview/015.jpg", alt:"image descrip 5"},
-                {id: 6, src:"/products_preview/016.jpg", alt:"image descrip 6"}
+                {id: 1, src:"/products_preview/04.jpg", alt:"image descrip 1"}
             ],
             category: 'equipment stencils',
             brand: 'INCONNU',
@@ -109,12 +94,7 @@ const data = {
             name: 'Nouvelle roue, disques interchangeables',
             miniature: "/products_preview/05.jpg",
             images: [
-                {id: 1, src:"/products_preview/01.jpg", alt:"image descrip 1"},
-                {id: 2, src:"/products_preview/012.jpg", alt:"image descrip 2"},
-                {id: 3, src:"/products_preview/013.jpg", alt:"image descrip 3"},
-                {id: 4, src:"/products_preview/014.jpg", alt:"image descrip 4"},
-                {id: 5, src:"/products_preview/015.jpg", alt:"image descrip 5"},
-                {id: 6, src:"/products_preview/016.jpg", alt:"image descrip 6"}
+                {id: 1, src:"/products_preview/05.jpg", alt:"image descrip 1"}
             ],
             category: 'equipment wheel',
             brand: 'INCONNU',
@@ -135,12 +115,7 @@ const data = {
             name: 'Tour De Poterie professionel',
             miniature: "/products_preview/06.jpg",
             images: [
-                {id: 1, src:"/products_preview/01.jpg", alt:"image descrip 1"},
-                {id: 2, src:"/products_preview/012.jpg", alt:"image descrip 2"},
-                {id: 3, src:"/products_preview/013.jpg", alt:"image descrip 3"},
-                {id: 4, src:"/products_preview/014.jpg", alt:"image descrip 4"},
-                {id: 5, src:"/products_preview/015.jpg", alt:"image descrip 5"},
-                {id: 6, src:"/products_preview/016.jpg", alt:"image descrip 6"}
+                {id: 1, src:"/products_preview/06.jpg", alt:"image descrip 1"}
             ],
             category: 'equipment wheel',
             brand: 'INCONNU',
@@ -161,12 +136,7 @@ const data = {
             name: 'Studio Poterie, dès 8 ans',
             miniature: "/products_preview/07.jpg",
             images: [
-                {id: 1, src:"/products_preview/01.jpg", alt:"image descrip 1"},
-                {id: 2, src:"/products_preview/012.jpg", alt:"image descrip 2"},
-                {id: 3, src:"/products_preview/013.jpg", alt:"image descrip 3"},
-                {id: 4, src:"/products_preview/014.jpg", alt:"image descrip 4"},
-                {id: 5, src:"/products_preview/015.jpg", alt:"image descrip 5"},
-                {id: 6, src:"/products_preview/016.jpg", alt:"image descrip 6"}
+                {id: 1, src:"/products_preview/07.jpg", alt:"image descrip 1"}
             ],
             category: 'equipment wheel',
             brand: 'INCONNU',
@@ -187,12 +157,7 @@ const data = {
             name: 'Pébéo - Gédéo Argile Sans Cuisson',
             miniature: "/products_preview/08.jpg",
             images: [
-                {id: 1, src:"/products_preview/01.jpg", alt:"image descrip 1"},
-                {id: 2, src:"/products_preview/012.jpg", alt:"image descrip 2"},
-                {id: 3, src:"/products_preview/013.jpg", alt:"image descrip 3"},
-                {id: 4, src:"/products_preview/014.jpg", alt:"image descrip 4"},
-                {id: 5, src:"/products_preview/015.jpg", alt:"image descrip 5"},
-                {id: 6, src:"/products_preview/016.jpg", alt:"image descrip 6"}
+                {id: 1, src:"/products_preview/08.jpg", alt:"image descrip 1"}
             ],
             category: 'clay autodry',
             brand: 'PEBEO',
@@ -213,12 +178,7 @@ const data = {
             name: 'Argile blanche à modeler 10kg',
             miniature: "/products_preview/09.jpg",
             images: [
-                {id: 1, src:"/products_preview/01.jpg", alt:"image descrip 1"},
-                {id: 2, src:"/products_preview/012.jpg", alt:"image descrip 2"},
-                {id: 3, src:"/products_preview/013.jpg", alt:"image descrip 3"},
-                {id: 4, src:"/products_preview/014.jpg", alt:"image descrip 4"},
-                {id: 5, src:"/products_preview/015.jpg", alt:"image descrip 5"},
-                {id: 6, src:"/products_preview/016.jpg", alt:"image descrip 6"}
+                {id: 1, src:"/products_preview/09.jpg", alt:"image descrip 1"}
             ],
             category: 'clay',
             brand: 'INCONNU',

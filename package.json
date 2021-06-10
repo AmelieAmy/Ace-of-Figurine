@@ -2,7 +2,7 @@
   "name": "ace_of_figurine",
   "type": "module",
   "version": "1.0.0",
-  "description": "E-Commerce website where you can find it all for creating sculputes",
+  "description": "E-Commerce website where you can find it all for creating sculptures",
   "main": "index.js",
   "dependencies": {
     "express": "^4.17.1"
