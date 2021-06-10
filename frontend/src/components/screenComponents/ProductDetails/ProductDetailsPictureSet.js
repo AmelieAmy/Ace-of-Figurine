@@ -1,74 +1,35 @@
 import React, { useState } from 'react';
 
 import styled from 'styled-components';
-// import Carousel from 'react-elastic-carousel'
 
-// const pictureSet = ( { product } ) => {
 
-//     return(
-//         <PDPictureSetStyle>
-//             <Carousel showArrows={false}>
-//                 {product.images.map(item => <img key={item.id} src={item.src} alt={item.alt} />)}
-//             </Carousel>
-//         </PDPictureSetStyle>
-//     )
-// }
+let lastindex = null;
 
 const PictureSet = ( { product } ) => {
     
-    const [activeMin, setActivMin] = useState(false);
-    const [zIndex, setZIndex] = useState(false);
-
-    const minOpacity =
-    {
-        opacity: "50%",
-    }
-
-    const maxOpacity =
-    {
-        opacity: "100%",
-    }
-    
-    const zIndexActiveStyle =
-    {
-        zIndex:1
-    }
-
-    const zIndexUnactiveStyle =
-    {
-        zIndex:0
-    }
-
+    const [indexImage, setIndexImage] = useState(0);
 
     function handleMiniature(e, index) {
+        setIndexImage(index);
         console.log("L'image ", index, " a été cliquée");
-        console.log(index, e);
-        e.target.style.opacity = .5;
-        setActivMin(true);
-        setZIndex(true);
+        console.log("e.target", e.target, "indexImage", indexImage, "index", index);
 
-
-        // e.nativeEvent[index]
-
-        // if(index === 0)
-        // {
-        //     setActivMin(true);
-        //     setZIndex(true);
-        // }
-        // if(index === 1)
-        // {
-        //     setActivMin(true);
-        //     setZIndex(true);
-        // }
-        
+        if ( lastindex === null ){
+            console.log('null')
+        }
+        else{
+            lastindex.style.opacity = 1;
+        }
+        e.target.style.opacity = 0.5;
+        console.log(lastindex);
+        lastindex = e.target;
     }
 
     return (
         <PDPictureSetStyle className="PDpictureSet">
             <div className="miniaturesSet">
                 {product.images.map((img, index) => (
-                    <div 
-                        style={activeMin ? minOpacity : maxOpacity}
+                    <div
                         onClick={(e) => handleMiniature(e, index)} 
                         key={img.id}
                         value={index}
@@ -80,16 +41,12 @@ const PictureSet = ( { product } ) => {
                     </div>
                 ))}
             </div>
+
             <div className="bigsSet">
                 <div>
-                    {product.images.map((img) => (
-                        <div style={zIndex ? zIndexActiveStyle : zIndexUnactiveStyle} key={img.id}>
-                            <img
-                                src={img.src}
-                                alt={img.alt}
-                            />
-                        </div>
-                    ))}
+                    <div>
+                        <img src={product.images[indexImage].src} alt={product.images[indexImage].alt} />
+                    </div>
                 </div>
             </div>
         </PDPictureSetStyle>
@@ -201,27 +158,4 @@ const PDPictureSetStyle = styled.div`
         }
     }
 
-
-    //img
-    //{
-    //    width: 100%;
-    //}
-    //
-    //.rec-carousel-wrapper
-    //{
-    //    display: flex;
-    //    flex-direction: row-reverse;
-    //    align-items: flex-start;
-    //}
-    //
-    //.rec-carousel-wrapper img
-    //{
-    //    border: 1px solid #DCE1DD;
-    //}
-    //
-    //.rec-pagination
-    //{
-    //    display: flex;
-    //    flex-direction: column;
-    //}
 `;
