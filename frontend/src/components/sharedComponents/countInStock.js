@@ -6,7 +6,7 @@ import styled from 'styled-components';
 const countInStock = ( { product } ) => {
     return (
         <CountInStockStyle>
-            { product.countInStock < 0 ?
+            { product.countInStock <= 0 ?
                 <span className="outOfStock">( Rupture de stock )</span>
 
                 : product.countInStock < 10 ?
@@ -37,7 +37,8 @@ const CountInStockStyle = styled.p`
     /* Out of Stock*/    
     .outOfStock
     {
-        color: #6D0505;
+        color: #9E2133;
+        font-weight: bold;
     }
 
 `;
