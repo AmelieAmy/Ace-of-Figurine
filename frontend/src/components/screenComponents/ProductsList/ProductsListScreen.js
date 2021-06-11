@@ -5,7 +5,7 @@ import Header from "../../sharedComponents/header/header";
 import ArianeThread from "../../sharedComponents/arianeThread";
 import TopCategories from "./topCategories";
 import AsideFilters from "./asideFilters";
-import ProductMiniature from "./productsSection";
+import ProductMiniature from "./productsListSection";
 import LoadingBox from "../../sharedComponents/loadingBox";
 import MessageBox from "../../sharedComponents/messageBox";
 import { listProducts } from '../../../reduxFiles/actions/productActions';

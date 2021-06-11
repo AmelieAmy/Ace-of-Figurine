@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch, Route } from "react-router-dom";
 
-import ProductsScreen from "../screenComponents/Products/ProductsScreen";
+import ProductsListScreen from "../screenComponents/ProductsList/ProductsListScreen";
 import PDS from "../screenComponents/ProductDetails/ProductDetailsScreen";
 
 
@@ -10,7 +10,7 @@ const App = () => {
     return (
         <Switch>
             <Route path="/product/:id" component={PDS} ></Route>
-            <Route path="/" component={ProductsScreen} exact ></Route>
+            <Route path="/" component={ProductsListScreen} exact ></Route>
         </Switch>
     );
 
