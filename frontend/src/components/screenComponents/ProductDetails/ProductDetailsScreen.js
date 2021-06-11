@@ -1,32 +1,45 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-
-import data from '../../../assets/data/data';
 
 import Header from "../../sharedComponents/header/header";
 import PictureSet from "./productDetailsPictureSet";
 import Body from "./productDetailsDescription";
+import LoadingBox from "../../sharedComponents/loadingBox";
+import MessageBox from "../../sharedComponents/messageBox";
+import { detailsProduct } from '../../../reduxFiles/actions/productActions';
 
 import styled from 'styled-components';
 
 
 const ProductDetailsScreen = (props) => {
-    
-    const product = data.products.find((x) => x._id === props.match.params.id);
 
-    if (!product) {
-        return <div> Product Not Found</div>;
-    }
+    const dispatch = useDispatch();
+    const productId = props.match.params.id;
+    const productDetails = useSelector((state) => state.productDetails);
+    const  { loading, product, error } = productDetails;
+
+    useEffect(() => {
+        dispatch(detailsProduct(productId));
+    }, [dispatch, productId]);
 
     return (
         <PDSStyle>
             <Header />
             <div className="container">
-                <Link className="backward" to="/">&lt; Retour aux recherches</Link>
-                <div className="productDetail">
-                    <PictureSet product={product} />
-                    <Body product={product} />
-                </div>
+                { loading ? (
+                    <LoadingBox></LoadingBox>
+                ) : error ? (
+                    <MessageBox variant="danger">{error}</MessageBox>
+                ) : (
+                    <>
+                        <Link className="backward" to="/">&lt; Retour aux recherches</Link>
+                        <div className="productDetail">
+                            <PictureSet product={product} />
+                            <Body product={product} />
+                        </div>
+                    </>
+                )}
             </div>
         </PDSStyle>
     )
