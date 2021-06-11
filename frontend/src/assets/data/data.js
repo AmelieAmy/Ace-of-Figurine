@@ -3,7 +3,6 @@ const data = {
         {
             _id: '1',            
             name: 'ARTEZA Premium Set _ 42 Outils de Sculpture',
-            miniature: "/products_preview/01.jpg",
             images: [
                 {id: 1, src:"/products_preview/01.jpg", alt:"image descrip 1"},
                 {id: 2, src:"/products_preview/012.jpg", alt:"image descrip 2"},
@@ -29,7 +28,6 @@ const data = {
         {
             _id: '2',            
             name: 'SENHAI Outils de sculpture pour pâte polymère ',
-            miniature: "/products_preview/02.jpg",
             images: [
                 {id: 1, src:"/products_preview/02.jpg", alt:"image descrip 1"}
             ],
@@ -50,7 +48,6 @@ const data = {
         {
             _id: '3',            
             name: '30 Outils de sculpture sur argile artisanale',
-            miniature: "/products_preview/03.jpg",
             images: [
                 {id: 1, src:"/products_preview/03.jpg", alt:"image descrip 1"}
             ],
@@ -71,7 +68,6 @@ const data = {
         {
             _id: '4',            
             name: 'Kit de sculpture en argile',
-            miniature: "/products_preview/04.jpg",
             images: [
                 {id: 1, src:"/products_preview/04.jpg", alt:"image descrip 1"}
             ],
@@ -92,7 +88,6 @@ const data = {
         {
             _id: '5',            
             name: 'Nouvelle roue, disques interchangeables',
-            miniature: "/products_preview/05.jpg",
             images: [
                 {id: 1, src:"/products_preview/05.jpg", alt:"image descrip 1"}
             ],
@@ -113,7 +108,6 @@ const data = {
         {
             _id: '6',            
             name: 'Tour De Poterie professionel',
-            miniature: "/products_preview/06.jpg",
             images: [
                 {id: 1, src:"/products_preview/06.jpg", alt:"image descrip 1"}
             ],
@@ -134,7 +128,6 @@ const data = {
         {
             _id: '7',            
             name: 'Studio Poterie, dès 8 ans',
-            miniature: "/products_preview/07.jpg",
             images: [
                 {id: 1, src:"/products_preview/07.jpg", alt:"image descrip 1"}
             ],
@@ -155,7 +148,6 @@ const data = {
         {
             _id: '8',            
             name: 'Pébéo - Gédéo Argile Sans Cuisson',
-            miniature: "/products_preview/08.jpg",
             images: [
                 {id: 1, src:"/products_preview/08.jpg", alt:"image descrip 1"}
             ],
@@ -176,7 +168,6 @@ const data = {
         {
             _id: '9',            
             name: 'Argile blanche à modeler 10kg',
-            miniature: "/products_preview/09.jpg",
             images: [
                 {id: 1, src:"/products_preview/09.jpg", alt:"image descrip 1"}
             ],

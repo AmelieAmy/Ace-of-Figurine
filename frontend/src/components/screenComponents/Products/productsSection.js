@@ -16,7 +16,7 @@ const ProductMiniature = ( { product } ) => {
         <PMStyle className="miniatureCard">
             <a href={`/product/${product._id}`}>
                 <img
-                    src={product.miniature}
+                    src={product.images[0].src}
                     alt={product.name}
                 />
             </a>

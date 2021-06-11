@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 
 
-let lastindex = null;
+// let lastindex = null;
 
 const PictureSet = ( { product } ) => {
     
@@ -11,18 +11,18 @@ const PictureSet = ( { product } ) => {
 
     function handleMiniature(e, index) {
         setIndexImage(index);
-        console.log("L'image ", index, " a été cliquée");
-        console.log("e.target", e.target, "indexImage", indexImage, "index", index);
-
-        if ( lastindex === null ){
-            console.log('null')
-        }
-        else{
-            lastindex.style.opacity = 1;
-        }
-        e.target.style.opacity = 0.5;
-        console.log(lastindex);
-        lastindex = e.target;
+        // console.log("L'image ", index, " a été cliquée");
+        // console.log("e.target", e.target, "indexImage", indexImage, "index", index);
+        
+        // if ( lastindex === null ){
+        //     console.log('null')
+        // }
+        // else{
+        //     lastindex.style.opacity = 1;
+        // }
+        // e.target.style.opacity = 0.5;
+        // console.log(lastindex);
+        // lastindex = e.target;
     }
 
     return (
