@@ -5,6 +5,7 @@ import SearchIcon from '@material-ui/icons/Search';
 import PersonIcon from '@material-ui/icons/Person';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
+import Badge from '@material-ui/core/Badge';
 
 import Logo from '../../../assets/imgs/logo.png';
 
@@ -13,7 +14,7 @@ const headerDesktop = () => {
         <Desktop className="desktop">
             <div className="desktopFirstNav">
                 <nav>
-                    <Link to="/search">
+                    <Link to="/search" className="searchIcon">
                         <SearchIcon />
                     </Link>
                     <Link to="/" className="logoTitle">
@@ -21,13 +22,19 @@ const headerDesktop = () => {
                     </Link>
                     <div className="rightSetOfIcones">
                         <Link to="/profil">
-                            <PersonIcon />
+                            <Badge color="secondary" badgeContent={0}>
+                                <PersonIcon />
+                            </Badge>
                         </Link>
                         <Link to="/favorites">
-                            <FavoriteIcon />
+                            <Badge color="secondary" badgeContent={0}>
+                                <FavoriteIcon />
+                            </Badge>
                         </Link>
-                        <Link to="/cart">
-                            <ShoppingBasketIcon />
+                        <Link to="/cart/:id">
+                            <Badge color="secondary" badgeContent={0}>
+                                <ShoppingBasketIcon />
+                            </Badge>
                         </Link>
                     </div>
                 </nav>
@@ -58,6 +65,7 @@ const Desktop = styled.header`
         justify-content: center;
         background-color: #770011;
         padding: 12px 0px;
+        font-size: 2rem;
     }
     
     div.desktopFirstNav nav
@@ -88,6 +96,12 @@ const Desktop = styled.header`
     .rightSetOfIcones a:nth-last-of-type(2)
     {
         padding: 0px 15px;
+    }
+
+    /* left set of icones */
+    .searchIcon
+    {
+        padding-top: 10px;
     }
 
 

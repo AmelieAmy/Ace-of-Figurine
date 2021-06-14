@@ -1,15 +1,19 @@
 import React from 'react';
 
+import CountInStock from '../../sharedComponents/countInStock';
 import Rating from '../../sharedComponents/rating';
 
 import styled from 'styled-components';
-import CountInStock from '../../sharedComponents/countInStock';
 
 
-const PDBody = ( { product } ) => {
+const ProductDetailsDescription = ( { product }, props ) => {
+
+    const handleAddToCart = () => {
+        // props.history.push(`/cart/${productId}`)
+    }
 
     return (
-        <PDBodyStyle className="body">
+        <PDDyStyle className="body">
             <div className="bodyHeader">
                 <div>
                     <h1>{product.name}</h1>
@@ -21,7 +25,9 @@ const PDBody = ( { product } ) => {
                 </div>
                 <div>
                     <h2>{product.price} €</h2>
-                    <button>Ajouter Au Panier</button>
+                    { product.countInStock > 0 && (
+                        <button onClick={handleAddToCart} >Ajouter Au Panier</button>
+                    ) }
                 </div>
             </div>
             <h3>Livraison</h3>
@@ -53,14 +59,14 @@ const PDBody = ( { product } ) => {
                 ))}
             </ul>
 
-        </PDBodyStyle>
+        </PDDyStyle>
     )
 }
 
-export default PDBody;
+export default ProductDetailsDescription;
 
 
-const PDBodyStyle = styled.div`
+const PDDyStyle = styled.div`
 
     background-color: #FAF3EE;
     padding: 20px 30px;
@@ -70,8 +76,6 @@ const PDBodyStyle = styled.div`
     {
         display: flex;
         flex-direction: column;
-        /* align-items: center;
-        justify-content: space-between; */
     }
     
     .bodyHeader > div:first-of-type
@@ -150,8 +154,6 @@ const PDBodyStyle = styled.div`
     /* Separator */
     .bodyLivraison hr
     {
-        /* margin-block-start: 0px;
-        margin-block-end: 0px; */
         margin: 0px 10px;
         border: 1px solid #9C7F7F;
         border-radius: 5px;

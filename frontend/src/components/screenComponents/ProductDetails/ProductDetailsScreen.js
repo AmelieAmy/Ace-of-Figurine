@@ -3,8 +3,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 import Header from "../../sharedComponents/header/header";
-import PictureSet from "./productDetailsPictureSet";
-import Body from "./productDetailsDescription";
+import PPictureSet from "./productDetailsPictureSet";
+import PDetailsDescription from "./productDetailsDescription";
 import LoadingBox from "../../sharedComponents/loadingBox";
 import MessageBox from "../../sharedComponents/messageBox";
 import { detailsProduct } from '../../../reduxFiles/actions/productActions';
@@ -12,7 +12,7 @@ import { detailsProduct } from '../../../reduxFiles/actions/productActions';
 import styled from 'styled-components';
 
 
-const ProductDetailsScreen = (props) => {
+const ProductDetailsScreen = ( props) => {
 
     const dispatch = useDispatch();
     const productId = props.match.params.id;
@@ -35,8 +35,8 @@ const ProductDetailsScreen = (props) => {
                     <>
                         <Link className="backward" to="/">&lt; Retour aux recherches</Link>
                         <div className="productDetail">
-                            <PictureSet product={product} />
-                            <Body product={product} />
+                            <PPictureSet product={product} />
+                            <PDetailsDescription product={product} />
                         </div>
                     </>
                 )}
