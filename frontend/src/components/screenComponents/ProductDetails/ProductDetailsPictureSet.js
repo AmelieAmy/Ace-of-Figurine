@@ -31,7 +31,7 @@ const PictureSet = ( { product } ) => {
                 {product.images.map((img, index) => (
                     <div
                         onClick={(e) => handleMiniature(e, index)} 
-                        key={img.id}
+                        key={index}
                         value={index}
                     >
                         <img

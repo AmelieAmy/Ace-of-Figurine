@@ -1,17 +1,25 @@
-import React, { useState } from 'react';
+import React from 'react';
+
+import Header from "../../sharedComponents/header/header";
 
 import styled from 'styled-components';
 
 
-const CartScreen = ( { product }, props ) => {
-
-    const [qty, setQty] = useState(1)
-    // const productId = props.match.params.id;
+const CartScreen = ( { product, cart, setCart }, props ) => {
 
     return (
         <CartScreenSStyle>
+            <Header cart={cart} setCart={setCart} />
             <div>
-                <p>ceci est le Panier</p>
+                <h2>Panier</h2>
+                {cart !== 0 ? (
+                    <div>
+                        <h3>Total :total €</h3>
+                        <button onClick={() => setCart(0)}>Vider le panier</button>
+                    </div>
+                ) : (
+                    <div>Votre panier est vide</div>
+                )}
                 {/* <select 
                     value={qty}
                     onChange={(e)=> setQty(e.target.value)}
@@ -24,6 +32,9 @@ const CartScreen = ( { product }, props ) => {
                         )
                     ) }
                 </select> */}
+                <div>
+                    {cart}
+                </div>
             </div>
         </CartScreenSStyle>
     )

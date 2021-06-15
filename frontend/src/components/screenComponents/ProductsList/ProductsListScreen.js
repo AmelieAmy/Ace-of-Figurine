@@ -13,7 +13,7 @@ import { listProducts } from '../../../reduxFiles/actions/productActions';
 import styled from 'styled-components';
 
 
-const ScreenProductMiniature = () => {
+const ScreenProductMiniature = ( { cart, setCart } ) => {
 
     const dispatch = useDispatch();
     const productList = useSelector( (state) => state.productList );
@@ -25,7 +25,7 @@ const ScreenProductMiniature = () => {
 
     return (
         <SPMStyle>
-            <Header />
+            <Header cart={cart} setCart={setCart} />
             <div className="container">
                 { loading ? (
                     <LoadingBox></LoadingBox>

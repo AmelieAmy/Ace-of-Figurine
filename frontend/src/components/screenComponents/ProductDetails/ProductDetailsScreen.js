@@ -12,10 +12,18 @@ import { detailsProduct } from '../../../reduxFiles/actions/productActions';
 import styled from 'styled-components';
 
 
-const ProductDetailsScreen = ( props) => {
+const ProductDetailsScreen = ( { cart, setCart }, props ) => {
 
     const dispatch = useDispatch();
-    const productId = props.match.params.id;
+
+    const currentPath = window.location.pathname;
+    const lastword = (words) => {
+        let w = words.split("/");
+        return w[w.length - 1];
+    }
+    const productId = lastword(currentPath)
+
+    // const productId = props.match.params.id;
     const productDetails = useSelector((state) => state.productDetails);
     const  { loading, product, error } = productDetails;
 
@@ -25,7 +33,7 @@ const ProductDetailsScreen = ( props) => {
 
     return (
         <PDSStyle>
-            <Header />
+            <Header cart={cart} setCart={setCart} />
             <div className="container">
                 { loading ? (
                     <LoadingBox></LoadingBox>
@@ -36,7 +44,7 @@ const ProductDetailsScreen = ( props) => {
                         <Link className="backward" to="/">&lt; Retour aux recherches</Link>
                         <div className="productDetail">
                             <PPictureSet product={product} />
-                            <PDetailsDescription product={product} />
+                            <PDetailsDescription product={product} cart={cart} setCart={setCart} />
                         </div>
                     </>
                 )}

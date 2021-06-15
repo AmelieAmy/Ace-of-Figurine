@@ -9,7 +9,7 @@ import Badge from '@material-ui/core/Badge';
 
 import Logo from '../../../assets/imgs/logo.png';
 
-const headerDesktop = () => {
+const headerDesktop = ( { cart, setCart } ) => {
     return (
         <Desktop className="desktop">
             <div className="desktopFirstNav">
@@ -32,7 +32,7 @@ const headerDesktop = () => {
                             </Badge>
                         </Link>
                         <Link to="/cart/:id">
-                            <Badge color="secondary" badgeContent={0}>
+                            <Badge color="secondary" badgeContent={cart}>
                                 <ShoppingBasketIcon />
                             </Badge>
                         </Link>

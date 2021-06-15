@@ -6,10 +6,10 @@ import Rating from '../../sharedComponents/rating';
 import styled from 'styled-components';
 
 
-const ProductDetailsDescription = ( { product }, props ) => {
+const ProductDetailsDescription = ( { product, cart, setCart }, props ) => {
 
     const handleAddToCart = () => {
-        // props.history.push(`/cart/${productId}`)
+        setCart(c => c + 1)
     }
 
     return (
@@ -52,8 +52,8 @@ const ProductDetailsDescription = ( { product }, props ) => {
             </div>
             <h3>Description</h3>
             <ul className="bodyDescription">
-                {product.description.map((des) => (
-                    <li key={product._id}>
+                {product.description.map((des, index) => (
+                    <li key={index}>
                         {des}
                     </li>
                 ))}

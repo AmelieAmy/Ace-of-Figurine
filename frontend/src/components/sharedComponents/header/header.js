@@ -5,13 +5,13 @@ import HeaderDesktop from "./headerDesktop";
 import HeaderMobile from "./headerMobile";
 
 
-const Header = () => {
+const Header = ( { cart, setCart } ) => {
 
     return (
         
         <Headers>
-            <HeaderMobile />
-            <HeaderDesktop />
+            <HeaderMobile cart={cart} setCart={setCart} />
+            <HeaderDesktop cart={cart} setCart={setCart} />
         </Headers>
     )
 };
